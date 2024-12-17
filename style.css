@@ -29,7 +29,14 @@ html {
 }
 
 body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
     background-color: var(--color-primary-1);
+}
+
+main {
+    flex: 1 1 0;
 }
 
 section {
