@@ -1,3 +1,7 @@
+*{
+    font-family: 'Poppins' , sans-serif;
+}
+
 header {
     width: 100%;
     padding: 28px 0px;
@@ -23,7 +27,7 @@ header {
 
 .nav-item a {
     text-decoration: none;
-    color: #ffffff;
+   
     list-style: none;
     font-weight: 600;
 }
@@ -193,3 +197,8 @@ h2{
 .course-item p {
     color: #000000;
 }
+
+
+
+/* */
+

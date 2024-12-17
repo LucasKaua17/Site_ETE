@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        footer {
+    background-color:#ffe8b4;;
+
+    padding: 40px 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    align-items: center;
+}
+
+.footer-section {
+    flex: 1;
+    padding: 0 20px;
+}
+
+.footer-section h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color:#1d1d1d;
+}
+
+.footer-section p {
+    font-size: 14px;
+    color: #000000;
+}
+
+.footer-section .logos-grid {
+    display: flex;  /* Coloca as colunas de imagens lado a lado */
+    gap: 20px;  /* Espaço entre as duas colunas */
+}
+
+.footer-section .logos-column {
+    display: flex;
+    flex-direction: column;  /* Mantém as imagens verticais em cada coluna */
+    gap: 20px;  /* Espaçamento entre as imagens em cada coluna */
+}
+
+.footer-section .logos-column a img {
+    width: 120px;  /* Tamanho das imagens */
+    height: auto;
+}
+
+.footer-section.about {
+    text-align: center;
+}
+
+.footer-section.socials {
+    text-align: right;
+}
+
+.footer-section .socials-icons a {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.footer-section .socials-icons img {
+    width: 24px;
+    height: 24px;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 20px 0;
+    background-color:#fddc8f;
+}
+
+.footer-bottom p {
+    margin: 0;
+    font-size: 14px;
+    color: #000000;
+}
+
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-section {
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .footer-section.logos .logos-grid {
+        flex-direction: column;  /* Empilha as colunas em dispositivos móveis */
+        align-items: center;
+    }
+
+    .footer-section.socials {
+        text-align: center;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section logos">
+                <div class="logos-grid">
+                    <div class="logos-column">
+                        <a href="#"><img src="imagens/gre.svg" alt="GRE"></a>
+                        <a href="#"><img src="imagens/governo_pe.svg" alt="Governo de Pernambuco"></a>
+                    </div>
+                    <div class="logos-column">
+                        <a href="#"><img src="imagens/ja.svg" alt="JA"></a>
+                        <a href="#"><img src="imagens/facepe.svg" alt="FACEPE"></a>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="footer-section about">
+                <h3>Sobre Nós</h3>
+                <p>Somos uma instituição educacional voltada para o desenvolvimento da educação técnica, promovendo inovação e cidadania.</p>
+                <p>Email: contato@exemplo.com</p>
+                <p>Telefone: (00) 1234-5678</p>
+            </div>
+    
+            <div class="footer-section socials">
+                <h3>Redes Sociais</h3>
+                <div class="social-media-buttons">
+                    <a href="">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+    
+                    <a href="">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+    
+                    <a href="">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    
+        <div class="footer-bottom">
+            <p>&copy; 2024 Instituição Exemplo. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+        
+</body>
+</html>
+

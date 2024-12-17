@@ -103,148 +103,141 @@
         </section>
 
 
-
-
-        <section id="menu">
-
-            <h3 class="section-subtitle">Nossos cursos</h3>
         
-                <!-- Seção de Cursos Integrados -->
-    <div class="course-category">
-        <h3>Cursos Integrados</h3>
-        <div class="course-grid">
-            <div class="course-card" data-course="modal1">
-                <img class="course-image" src="Imagem/tds.png" alt="Técnico em Desenvolvimento de Sistemas">
-                <p class="course-description">Curso Integrado</p>
+        
+        <section id="menu">
+            <h3 class="section-subtitle">Nossos cursos</h3>
+            
+            <!-- Seção de Cursos Integrados -->
+            <div class="course-category">
+                <h3>Cursos Integrados</h3>
+                <div class="course-grid">
+                    <div class="course-card" data-course='{"title":"Técnico em Desenvolvimento de Sistemas", "description":"Cursos integrados", "load":"3 anos", "curriculum":["Introdução à Programação", "Banco de Dados", "Desenvolvimento Web"]}' onclick="openModal(this)">
+                        <img class="course-image" src="Imagem/tds.png" alt="Técnico em Desenvolvimento de Sistemas">
+                        <p class="course-description">Curso Integrado</p>
+                    </div>
+                    <div class="course-grid">
+                        <div class="course-card" data-course='{"title":"Técnico em Logística", "description":"Cursos integrados", "load":"3 anos", "curriculum":["Introdução à Programação", "Banco de Dados", "Desenvolvimento Web"]}' onclick="openModal(this)">
+                            <img class="course-image" src="Imagem/log.png" alt="Técnico em Desenvolvimento de Sistemas">
+                            <p class="course-description">Curso Integrado</p>
+                        </div>
+                        <div class="course-grid">
+                            <div class="course-card" data-course='{"title":"Técnico em Administração", "description":"Cursos integrados", "load":"3 anos", "curriculum":["Introdução à Programação", "Banco de Dados", "Desenvolvimento Web"]}' onclick="openModal(this)">
+                                <img class="course-image" src="Imagem/adm.png" alt="Técnico em Desenvolvimento de Sistemas">
+                                <p class="course-description">Curso Integrado</p>
+                            </div>
+                    <!-- Outros cursos seguem o mesmo padrão -->
+                </div>
             </div>
-            <div class="course-card" data-course="modal2">
-                <img class="course-image" src="Imagem/log.png" alt="Técnico em Logística">
-                <p class="course-description">Curso Integrado</p>
-            </div>
-            <div class="course-card" data-course="modal3">
-                <img class="course-image" src="Imagem/adm.png" alt="Técnico em Administração">
-                <p class="course-description">Curso Integrado</p>
-            </div>
-        </div>
-    </div>
-
-    <!-- Modal Estrutura (oculto por padrão) -->
- 
-    <div id="modal" class="modal">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h2 class="modal-title">Técnico em Desenvolvimento de Sistemas</h2> <!-- O título será preenchido dinamicamente -->
-                <span class="modal-close" onclick="closeModal()">&times;</span>
-            </div>
-            <div class="modal-body">
-                <p><strong>Descrição:</strong> <span class="course-description">O curso tal kskkaskaksakjddeeeudu</span></p>
-                <p><strong>Carga Horária:</strong> <span class="course-load">3 anos</span></p>
-                <h3>Matriz Curricular</h3>
-                <ul class="course-curriculum"></ul> <!-- Lista será preenchida dinamicamente -->
-            </div>
-            <div class="modal-footer">
-                <button onclick="closeModal()">Fechar</button>
-            </div>
-        </div>
-    </div>
-    
-
-
-    
-    <div id="modal2" class="modal">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h2 class="modal-title">Técnico em Desenvolvimento de Sistemas</h2> <!-- O título será preenchido dinamicamente -->
-                <span class="modal-close" onclick="closeModal()">&times;</span>
-            </div>
-            <div class="modal-body">
-                <p><strong>Descrição:</strong> <span class="course-description">O curso tal kskkaskaksakjddeeeudu</span></p>
-                <p><strong>Carga Horária:</strong> <span class="course-load">3 anos</span></p>
-                <h3>Matriz Curricular</h3>
-                <ul class="course-curriculum"></ul> <!-- Lista será preenchida dinamicamente -->
-            </div>
-            <div class="modal-footer">
-                <button onclick="closeModal()">Fechar</button>
-            </div>
-        </div>
-    </div>
-    
 
 
 
-    
-    <div id="modal3" class="modal">
-        <div class="modal-content">
-            <div class="modal-header">
-                <span class="modal-title">Técnico em Logística</span>
-                <span class="modal-close" onclick="closeModal()">&times;</span>
-            </div>
-            <div class="modal-body">
-                <p><strong>Descrição:</strong> Este curso oferece conhecimentos em cadeia de suprimentos e gestão de logística.</p>
-                <p><strong>Carga Horária:</strong> 1000 horas</p>
-                <h3>Matriz Curricular</h3>
-                <ul>
-                    <li>Gestão de Estoques</li>
-                    <li>Transporte e Distribuição</li>
-                    <li>Logística Internacional</li>
-                </ul>
-            </div>
-            <div class="modal-footer">
-                <button onclick="closeModal()">Fechar</button>
-            </div>
-        </div>
-    </div>
-    
-
-
-
-
-
-
-
-
-
-
-
-
-            <!-- Seção de Cursos Subsequentes -->
             <div class="course-category">
                 <h3>Cursos Subsequentes</h3>
-
                 <div class="course-grid">
-                    <div class="course-card">
+                    <div class="course-card" data-course='{"title":"Técnico em Desenvolvimento de Sistemas", "description":"Cursos integrados", "load":"3 anos", "curriculum":["Introdução à Programação", "Banco de Dados", "Desenvolvimento Web"]}' onclick="openModal(this)">
                         <img class="course-image" src="Imagem/tds.png" alt="Técnico em Desenvolvimento de Sistemas">
                         <p class="course-description">Curso Subsequente</p>
                     </div>
-                    <div class="course-card">
-                        <img class="course-image" src="Imagem/log.png" alt="Técnico em Logística">
-                        <p class="course-description">Curso Subsequente</p>
-                    </div>
-                    <div class="course-card">
-                        <img class="course-image" src="Imagem/adm.png" alt="Técnico em Administração">
-                        <p class="course-description">Curso Subsequente</p>
-                    </div>
+                    <div class="course-grid">
+                        <div class="course-card" data-course='{"title":"Técnico em Logística", "description":"Cursos integrados", "load":"3 anos", "curriculum":["Introdução à Programação", "Banco de Dados", "Desenvolvimento Web"]}' onclick="openModal(this)">
+                            <img class="course-image" src="Imagem/log.png" alt="Técnico em Desenvolvimento de Sistemas">
+                            <p class="course-description">Curso Subsequente</p>
+                        </div>
+                        <div class="course-grid">
+                            <div class="course-card" data-course='{"title":"Técnico em Administração", "description":"Cursos integrados", "load":"3 anos", "curriculum":["Introdução à Programação", "Banco de Dados", "Desenvolvimento Web"]}' onclick="openModal(this)">
+                                <img class="course-image" src="Imagem/adm.png" alt="Técnico em Desenvolvimento de Sistemas">
+                                <p class="course-description">Curso Subsequentes</p>
+                            </div>
+                    <!-- Outros cursos seguem o mesmo padrão -->
                 </div>
             </div>
-        
-            <!-- Seção de Cursos EAD com Carrossel -->
-            <div class="course-category">
-                <h3>Cursos EAD</h3>
 
-                <div class="carousel-container">
-                <a href="cursosete.html">
-                <button class="carousel-button prev" onclick="prevSlide()">&#10094;</button>
-                <div class="carousel-wrapper" id="carousel-wrapper">
-                    <!-- Os cards de cursos serão gerados aqui pelo JS -->
-                </div>
-            </a>
-                <button class="carousel-button next" onclick="nextSlide()">&#10095;</button>
+
+
+          <!-- Seção de Cursos EAD com Carrossel -->
+<div class="course-category">
+    <h3>Cursos EAD</h3>
+    <div class="carousel-container">
+        <button class="carousel-button prev" onclick="prevSlide()">&#10094;</button>
+        <div class="carousel-wrapper" id="carousel-wrapper">
+            <div class="course-card" data-course='{"title":"Técnico em Desenvolvimento de Sistemas", "description":"Cursos integrados", "load":"3 anos", "curriculum":["Introdução à Programação", "Banco de Dados", "Desenvolvimento Web"]}' onclick="openModal(this)">
+                <img class="course-image" src="Imagem/tds.png" alt="Técnico em Desenvolvimento de Sistemas">
+                <p class="course-description">Técnico em Desenvolvimento de Sistemas</p>
             </div>
+            <div class="course-card" data-course='{"title":"Técnico em Logística", "description":"Cursos integrados", "load":"3 anos", "curriculum":["Introdução à Programação", "Banco de Dados", "Desenvolvimento Web"]}' onclick="openModal(this)">
+                <img class="course-image" src="Imagem/log.png" alt="Técnico em Logística">
+                <p class="course-description">Técnico em Logística</p>
+            </div>
+            <div class="course-card" data-course='{"title":"Técnico em Administração", "description":"Cursos integrados", "load":"3 anos", "curriculum":["Introdução à Programação", "Banco de Dados", "Desenvolvimento Web"]}' onclick="openModal(this)">
+                <img class="course-image" src="Imagem/adm.png" alt="Técnico em Administração">
+                <p class="course-description">Técnico em Administração</p>
+            </div>
+            <div class="course-card" data-course='{"title":"Técnico em Design Gráfico", "description":"Cursos integrados", "load":"3 anos", "curriculum":["Introdução à Programação", "Banco de Dados", "Desenvolvimento Web"]}' onclick="openModal(this)">
+                <img class="course-image" src="Imagem/dg.png" alt="Técnico em Design Gráfico">
+                <p class="course-description">Técnico em Design Gráfico</p>
+            </div>
+            <div class="course-card" data-course='{"title":"Técnico em Desenvolvimento de Imagens", "description":"Cursos integrados", "load":"3 anos", "curriculum":["Introdução à Programação", "Banco de Dados", "Desenvolvimento Web"]}' onclick="openModal(this)">
+                <img class="course-image" src="Imagem/di.png" alt="Técnico em Desenvolvimento de Imagens">
+                <p class="course-description">Técnico em Desenvolvimento de Imagens</p>
+            </div>
+            <div class="course-card" data-course='{"title":"Técnico em Multimídia", "description":"Cursos integrados", "load":"3 anos", "curriculum":["Introdução à Programação", "Banco de Dados", "Desenvolvimento Web"]}' onclick="openModal(this)">
+                <img class="course-image" src="Imagem/multi.png" alt="Técnico em Multimídia">
+                <p class="course-description">Técnico em Multimídia</p>
+            </div>
+            <div class="course-card" data-course='{"title":"Técnico em TI", "description":"Cursos integrados", "load":"3 anos", "curriculum":["Introdução à Programação", "Banco de Dados", "Desenvolvimento Web"]}' onclick="openModal(this)">
+                <img class="course-image" src="Imagem/til.png" alt="Técnico em TI">
+                <p class="course-description">Técnico em TI</p>
+            </div>
+            <div class="course-card" data-course='{"title":"Técnico em Recursos Humanos", "description":"Cursos integrados", "load":"3 anos", "curriculum":["Introdução à Programação", "Banco de Dados", "Desenvolvimento Web"]}' onclick="openModal(this)">
+                <img class="course-image" src="Imagem/rh.png" alt="Técnico em Recursos Humanos">
+                <p class="course-description">Técnico em Recursos Humanos</p>
+            </div>
+            <div class="course-card" data-course='{"title":"Técnico em Segurança do Trabalho", "description":"Cursos integrados", "load":"3 anos", "curriculum":["Introdução à Programação", "Banco de Dados", "Desenvolvimento Web"]}' onclick="openModal(this)">
+                <img class="course-image" src="Imagem/se.png" alt="Técnico em Segurança do Trabalho">
+                <p class="course-description">Técnico em Segurança do Trabalho</p>
+            </div>
+            <div class="course-card" data-course='{"title":"Técnico em Sustentabilidade", "description":"Cursos integrados", "load":"3 anos", "curriculum":["Introdução à Programação", "Banco de Dados", "Desenvolvimento Web"]}' onclick="openModal(this)">
+                <img class="course-image" src="Imagem/st.png" alt="Técnico em Sustentabilidade">
+                <p class="course-description">Técnico em Sustentabilidade</p>
+            </div>
+            <!-- Adicione mais cartões de cursos aqui -->
         </div>
-    
-        
+        <button class="carousel-button next" onclick="nextSlide()">&#10095;</button>
+    </div>
+</div>
+
+            
+            
+
+
+
+
+            <!-- Modal Estrutura (oculto por padrão) -->
+            <div id="modal" class="modal">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2 class="modal-title"></h2>
+                        <span class="modal-close" onclick="closeModal()">&times;</span>
+                    </div>
+                    <div class="modal-body">
+                        <p><strong>Descrição:</strong> <span class="course-description"></span></p>
+                        <p><strong>Carga Horária:</strong> <span class="course-load"></span></p>
+                        <h3>Matriz Curricular</h3>
+                        <ul class="course-curriculum"></ul>
+                    </div>
+                    <div class="modal-footer">
+                        <button onclick="closeModal()">Fechar</button>
+                    </div>
+                </div>
+            </div>
+            
+      
         </section>
         
+
+
+
 
 
 
