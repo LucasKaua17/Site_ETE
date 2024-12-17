@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/footer.css">
+    <link rel="stylesheet" href="style/header.css">
+    <link rel="stylesheet" href="style/home.css">
+    <link rel="stylesheet" href="https://fontawesome.com/icons/caret-down?f=classic&s=solid">
+    <link rel="stylesheet" href="style/menu.css">
+    <link rel="stylesheet" href="style/noticias.css">
+    <link rel="stylesheet" href="Imagem/logo-ete1-removebg-preview.png">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <title>Equipe de Desenvolvimento -  ETE José Joaquim da Silva Filho</title>
+    
+    <style>
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            
+        }
+
+        .section-title {
+            font-size: 32px;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .section-text {
+            font-size: 18px;
+            text-align: justify;
+            margin-bottom: 30px;
+        }
+
+        .team-photo {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 20px auto;
+            border-radius: 10px;
+            max-height: 400px;
+        }
+
+        .step-section {
+            background-color: #fff;
+            padding: 40px;
+            margin-bottom: 30px;
+            border-radius: 10px;
+            margin-top: 40px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .step-title {
+            font-size: 24px;
+        
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .step-text {
+            font-size: 18px;
+            line-height: 1.6;
+            text-align: justify;
+            margin-bottom: 20px;
+        }
+
+        /* Estilo da galeria de fotos */
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .team-member {
+    text-align: center; /* Centraliza o texto dentro de cada membro */
+    margin-bottom: 20px; /* Adiciona espaço entre os membros da equipe */
+}
+
+.team-member img {
+    width: 150px; /* Largura das fotos dos membros */
+    height: 150px; /* Define uma altura fixa */
+    object-fit: cover; /* Garante que a imagem seja cortada proporcionalmente */
+    border-radius: 50%; /* Torna as imagens redondas */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Sombra para as imagens */
+    margin-bottom: 10px; /* Espaço entre a foto e o nome */
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Colunas responsivas */
+    gap: 20px; /* Espaço entre os membros da equipe */
+    justify-items: center; /* Centraliza os membros dentro do grid */
+}
+
+.team-member h4 {
+    font-size: 18px; /* Tamanho da fonte para os nomes */
+    margin-top: 10px; /* Espaço entre a imagem e o nome */
+    color: #333; /* Cor do texto */
+}
+
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav id="navbar">
+            <img src="Imagem/logo-ete1-removebg-preview.png" width="300px" alt="Logo da Escola">
+
+            <ul id="nav_list">
+                <li class="nav-item active">
+                    <a href="teste.html">Início</a>
+                </li>
+               
+                <li class="nav-item">
+                    <a href="#menu">Cursos</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#noticias">Notícias</a>
+                </li>
+                
+                <li class="nav-item submenu-parent">
+                    <a href="">Estudantes <i class="fa fa-chevron-down"></i></a>
+                    <ul class="submenu">
+                        <li><a href="https://sisacad.educacao.pe.gov.br/sissel/">Inscrição</a></li>
+                        <li><a href="https://enem.inep.gov.br/participante/?#!/loginParticipante">Enem</a></li>
+                        <li><a href="https://sistemaprocessodeingresso.upe.pe.gov.br/processodeingresso/login.xhtml?origem=ssa1">SSA</a></li>
+                        
+                    </ul>
+                </li>
+            </li>
+                <li class="nav-item">
+                    <a href="equipe.html">Equipe</a>
+                </li>
+                <li class="nav-item">
+                    <a href="sobrenos.html">Sobre Nós</a>
+                </li>
+            </ul>
+            
+
+            <button id="mobile_btn">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </nav>
+
+
+        <div id="mobile_menu">
+            <ul id="mobile_nav_list">
+                <li class="nav-item"><a href="#home">Início</a></li>
+                <li class="nav-item"><a href="#menu">Cursos</a></li>
+                <li class="nav-item"><a href="#">Notícias</a></li>
+                <li class="nav-item"><a href="#">Estudantes</a></li>
+                <li class="nav-item"><a href="equipe.html">Equipe</a></li>
+                <li class="nav-item"><a href="sobrenos.html">Sobre Nós</a></li>
+            </ul>
+        </div>
+        
+
+
+
+    </header>
+
+    <main id="content">
+        <section id="home">
+            <div class="shape"></div>
+            <div id="cta">
+
+                <h1 class="title"> 
+                    Nosso compromisso <br>
+                    é com o seu
+                    <span>futuro!</span>
+                </h1>
+
+                <p class="description">
+                    "Educação não transforma o mundo. Educação muda as pessoas. 
+                    Pessoas transformam o mundo." <br>
+                    
+                    <span class="author">Paulo Freire</span>
+                </p>
+
+                
+
+                
+            </div>
+
+            <div id="banner">
+                <img src="Imagem/foto-banner (1).png" alt="Banner">
+            </div>
+        </section>
+    </main>
+
+    <main id="content">
+       
+
+        <!-- Passo 2: O desenvolvimento -->
+        <section id="desenvolvimento" class="step-section">
+            <div class="container">
+                <h3 class="step-title">O Desenvolvimento</h3>
+                <p class="step-text">
+                    A equipe utilizou as mais modernas ferramentas de desenvolvimento, incluindo HTML, CSS, e JavaScript, para construir uma plataforma funcional e responsiva. Cada integrante contribuiu com ideias e soluções inovadoras, resultando em um produto final de qualidade.
+                </p>
+                <div class="gallery">
+                    <img src="Imagem/12.png" alt="Equipe trabalhando no desenvolvimento">
+                    <img src="Imagem/1.png" alt="Discussão de design e funcionalidades">
+                    <img src="Imagem/10.png" alt="Reunião de alinhamento">
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Passo 4: Conclusão e entrega -->
+        <section id="conclusao" class="step-section">
+            <div class="container">
+                <h3 class="step-title">Conclusão e Entrega</h3>
+                <p class="step-text">
+                    Após meses de trabalho, o site foi entregue com sucesso, atendendo a todos os requisitos estabelecidos. O resultado foi um site profissional, esteticamente agradável e funcional, que reflete a visão e os valores da instituição.
+                </p>
+                <img src="Imagem/2.png" alt="Celebração da entrega do projeto" class="team-photo">
+            </div>
+        </section>
+    </main>
+
+    <!-- Passo 5: Equipe de Desenvolvimento -->
+<section id="equipe" class="step-section">
+    <div class="container">
+        <h3 class="step-title">Nossa Equipe</h3>
+        <p class="step-text">
+            Conheça os talentosos estudantes que fizeram este projeto acontecer. Cada um deles trouxe suas habilidades e paixão, contribuindo para o desenvolvimento do site.
+        </p>
+        <div class="gallery">
+            <div class="team-member">
+                <img src="Imagem/aluno1 (2).jpeg" alt="Foto do aluno 1" class="team-photo">
+                <h4>Lucas Kauã</h4>
+            </div>
+            <div class="team-member">
+                <img src="Imagem/aluno2.jpeg" alt="Foto do aluno 2" class="team-photo">
+                <h4>Kauã Vinícius</h4>
+            </div>
+            <div class="team-member">
+                <img src="Imagem/aluno3.jpeg" alt="Foto do aluno 3" class="team-photo">
+                <h4>Ytallo Miguel</h4>
+            </div>
+            <div class="team-member">
+                <img src="Imagem/WhatsApp Image 2024-12-13 at 20.00.57.jpeg" alt="Foto do aluno 3" class="team-photo">
+                <h4>Pedro Felipe</h4>
+            </div>
+            <div class="team-member">
+                <img src="Imagem/aluna4.jpeg" alt="Foto do aluna 4" class="team-photo">
+                <h4>Paloma Bezerra</h4>
+            </div>
+            <div class="team-member">
+                <img src="Imagem/aluno5.jpeg" alt="Foto do aluno 5" class="team-photo">
+                <h4>Éverton</h4>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <footer>
+        <div class="footer-container">
+            <!-- Seção das Imagens de Parcerias -->
+            <div class="footer-section logos">
+                <div class="logos-grid">
+                    <a href="#"><img src="Imagem/logo_GRE (1).png" alt="Imagem logo da  GRE Mata Centro"></a>
+                    <a href="#"><img src="Imagem/logo_PE.png" alt="Imagem logo do Governo de Pernambuco"></a>
+                    <a href="#"><img src="Imagem/logo_FACEPE.png" alt="Logo da FACEPE"></a>
+                </div>
+            </div>
+    
+            <!-- Seção de Contato -->
+            <div class="footer-section about">
+                <p>Endereço: Rua Exemplo, 123 - Centro</p>
+                <p>Email: contato@exemplo.com</p>
+                <p>CEP: 00000-000</p>
+            </div>
+    
+            <!-- Seção de Redes Sociais -->
+            <div class="footer-section socials">
+                <div class="social-media-buttons">
+                    <a href="https://www.instagram.com/etevitoriasa/">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Seção de Direitos Autorais -->
+        <div class="footer-bottom">
+            <p>&copy; 2024 Instituição Exemplo. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+    
+</body>
+</html>
+
+
+</body>
+</html>
